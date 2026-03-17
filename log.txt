@@ -1,0 +1,36 @@
+
+Cấp 0: 
+Cài thư viện: pip install fastapi uvicorn
+Chạy ứng dụng FastAPI : uvicorn main:app --reload (chạy trong terminal)
+Kiểm tra server có chạy không:  http://127.0.0.1:8000/
+Kiểm tra endpoint /health : http://127.0.0.1:8000/health
+Kiểm tra Swagger UI : http://127.0.0.1:8000/docs
+
+Cấp 1: không có nhiều lệnh chỉ thực hiện thao tác trên gia diện fastAPI
+muốn post hay get thì cần "try out it"
+
+Cấp 2: không có nhiều lệnh mới chỉ thực hiện thao tác trên fastAPI và đổi code trong main
+
+Cấp 3: chỉ là tách các thư mục và không nhiều thao tác
+
+Cấp 4: 
+Cài thư viện: pip install sqlalchemy alembic
+sau khi chạy thư viện 
+
+Cấp 5:
+Tạo thêm các file mới trong các thư mục 
+Sửa lại file model
+
+
+Cấp 6:
+Không tạo file mới chỉ sửa các file trong các thư mục db, service, core, reponsitory, 
+
+Cấp 7:
+Tạo thư mục mới là tests:
+cài thêm thư viện : pip install pytest httpx
+build docker: Dockerfile, docker-compose.yml, requirements.txt, README.md
+docker-compose down
+docker-compose up --build
+
+Cấp 8: 
+Chỉ sửa code và README không tạo gì thêm
