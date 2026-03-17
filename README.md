@@ -5,7 +5,12 @@
 - Bài làm của em được thực hiện bởi chính em và có sự hỗ trợ bởi AI
 - Mô tả : Tổng quan bài làm có 8 cấp độ, ở mỗi cấp độ cấu trúc của cây sẽ khác nhau em cập nhật lại cấu trúc của bài qua 8 file trong đó có 3 file 
 main.py cho cấp 0 đến 2 và kể từ cấp 3 trở đi là file .rar do cấu trúc phức tạp hơn
-
+- Công cụ sử dụng: VS code, docker
+- Hướng dẫn sử dụng:
+  - Cấp 0 đến cấp 6 : mở cmd chạy lệnh uvicorn main:app --reload, sau khi chạy thành công mở sẽ ở được host : http://127.0.0.1:8000/ và để xem Swagger mở http://127.0.0.1:8000/docs 
+  - Cấp 7 và cấp 8  :
+     - Test: mở cmd chứa thư mục tổng để chạy test: python -m pytest
+     - Docker: mở cmd thư mục tổng chạy docker-compose up --build , sau đó truy cập vào http://127.0.0.1:8000/docs xem Swagger
 - Quá trình thực hiện :
   - Cấp 0: Làm quen FastAPI (Hello To-Do)
     => Chạy uvicorn và gọi được 2 endpoint.
